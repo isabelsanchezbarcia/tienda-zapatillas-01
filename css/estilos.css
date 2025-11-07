@@ -1,0 +1,402 @@
+/* ======== ESTILO GENERAL ======== */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* ======== HEADER ======== */
+
+header {
+    background-color: #111;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #ffce54;
+}
+
+
+header h1 {
+    font-size: 22px;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ======== PRODUCTOS ======== */
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+.producto {
+    background: white;
+    border-radius: 14px;
+    width: 260px;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.producto:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.producto h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+.producto:hover {
+    transform: scale(1.03);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.precio {
+    color: #0a7f00;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.boton:hover {
+    background: #444;
+}
+
+
+.boton:hover {
+    background: #444;
+}
+
+/* ======== TABLA DEL CARRITO ======== */
+
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+td img {
+    border-radius: 6px;
+    transition: transform .2s;
+}
+
+td img:hover {
+    transform: scale(1.08);
+}
+
+
+th {
+    background: #222;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+td img {
+    border-radius: 6px;
+}
+
+.total-final {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* ======== BOTONES PEQUEÑOS ======== */
+
+.boton-mini {
+    background: #222;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.boton-mini:hover {
+    background: #555;
+}
+
+/* ======== FORMULARIOS (LOGIN / REGISTER) ======== */
+
+.form-contenedor {
+    width: 350px;
+    margin: 60px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+.form-contenedor h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-contenedor label {
+    font-weight: bold;
+}
+
+.form-contenedor input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.form-contenedor textarea {
+    display: block;
+    margin-bottom:18px ;
+    width: 100%;  /*no se como pero funciona para la caja de descripción del producto pero me vale*/
+}
+
+.form-contenedor button {
+    width: 100%;
+    padding: 10px;
+    background: #111;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.form-contenedor button:hover {
+    background: #444;
+}
+
+/* ======== PANEL DE ADMINISTRACIÓN ======== */
+
+.panel-admin {
+    width: 80%;
+    max-width: 900px;
+    background: white;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.panel-admin h2 {
+    margin-bottom: 25px;
+}
+
+/* BOTONES DEL PANEL */
+
+.boton-admin {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px;
+    background: #111;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.boton-admin:hover {
+    background: #444;
+}
+
+.btn-crud {
+    padding: 7px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    transition: .2s;
+    margin: 0 8px;
+    display: inline-block;
+}
+
+.btn-editar {
+    background: #0275d8; /* azul */
+}
+
+.btn-editar:hover {
+    background: #025aa5;
+}
+
+.btn-eliminar {
+    background: #d9534f; /* rojo */
+}
+
+.btn-eliminar:hover {
+    background: #c9302c;
+}
+
+/* ======== ACCIONES EN TABLA (ADMIN) — FORZADO ======== */
+.tabla-acciones {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+}
+
+.tabla-acciones a {
+    display: inline-block !important;
+}
+
+/* ======== FORMULARIO AÑADIR PRODUCTO ======== */
+
+textarea {
+    resize: vertical;
+}
+
+input[type="file"] {
+    padding: 8px 0;
+}
+
+/* ======== SIDEBAR ADMIN ======== */
+
+.sidebar {
+    width: 220px;
+    background: #111;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 40px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.25);
+}
+
+.sidebar h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 20px;
+    color: #ddd;
+    text-decoration: none;
+    font-size: 16px;
+    transition: .2s;
+}
+
+.sidebar a:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Zona de contenido al lado del sidebar */
+.contenido-admin {
+    margin-left: 240px;  
+    padding: 40px;
+}
+
+
+/* ======== BOTONES DE CANTIDAD EN CARRITO ======== */
+
+.cantidad-carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-cantidad {
+    display: inline-block;
+    background: #111;
+    color: white;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.btn-cantidad:hover {
+    background: #444;
+}
+
+.num-cantidad {
+    font-size: 16px;
+    font-weight: bold;
+}
